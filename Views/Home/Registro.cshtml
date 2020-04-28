@@ -12,6 +12,7 @@
         String compania = Request.Form["compania"];
         String contacto = Request.Form["contacto"];
         String empleados = Request.Form["empleados"];
+        String sucursal = Request.Form["sucursal"];
 
 
         <text>
@@ -23,6 +24,7 @@
             <br />
             Empleados: @empleados
             <br />
+            Sucursal: @sucursal
         </text>
     }
 }
@@ -44,9 +46,19 @@
             <input type="int" name="empleados" value="" />
         </div>
         <div>
+            <label>Sucursal</label>
+            <select name="sucursal">
+                <option>Selecciona</option>
+                <option>San Bartolito</option>
+                <option>Benito Juarez</option>
+
+            </select>
+        </div>
+        <div>
             <label>&nbsp;</label>
             <input type="submit" name="enviar" value="Enviar" />
         </div>
+
     </fieldset>
 </form>
 
