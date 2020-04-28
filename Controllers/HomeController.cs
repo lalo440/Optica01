@@ -26,5 +26,12 @@ namespace Optica01.Controllers
 
             return View();
         }
+
+        public ActionResult Registro()
+        {
+            
+
+            return View();
+        }
     }
 }
