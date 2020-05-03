@@ -3,14 +3,15 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>ArisVision</title>
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-   
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-   
+
 
 
 </head>
@@ -18,13 +19,11 @@
 
     
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
 
 
 
+        <div class="container ">
 
-        <div class="container">
-            
             <img src="~/img/aris.jpg" width="100" />
 
             <button type="button" class="btn btn-outline-primary btn-lg">@Html.ActionLink("Inicio", "Index", "Home")</button>
@@ -33,11 +32,14 @@
             <button type="button" class="btn btn-outline-primary btn-lg">@Html.ActionLink("Registro", "Registro", "Home")</button>
             <button type="button" class="btn btn-outline-primary btn-lg">@Html.ActionLink("Registro de Pacientes", "Index", "Pacientes")</button>
 
+           
+
+
 
         </div>
 
 
-        <div class="container body-content">
+        <div class="container-fluid ">
             @RenderBody()
             <hr />
             <footer>
