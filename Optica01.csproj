@@ -261,6 +261,12 @@
     <Content Include="Content\Site.css" />
     <Content Include="img\aris.jpg" />
     <Content Include="img\banner.png" />
+    <Content Include="img\em.png" />
+    <Content Include="img\email.png" />
+    <Content Include="img\fo.png" />
+    <Content Include="img\icons8-mensaje-relleno-48.png" />
+    <Content Include="img\p.png" />
+    <Content Include="img\si.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
