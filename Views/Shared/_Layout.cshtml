@@ -19,30 +19,32 @@
 
 
   
-
+   
 
 
     <div class="container-fluid ">
 
-        <div class="row ">
+        <div class="row container-fluid">
 
 
 
             <div class="col-sm-9 col-md-9 ">
                 <img src="~/img/aris.jpg" width="100" />
 
-
-                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                    <a class="navbar-brand" >@Html.ActionLink("Inicio", "Index", "Home", new { @style = "color:white; font-size:30px; font-weight: 700;  " })   </a>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                  
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="navbar-brand">@Html.ActionLink("Pediatria", "About", "Home", new { @style = "color:white; font-size:30px; font-weight: 700;  " }) </a>
-                            <a class="nav-item nav-link">@Html.ActionLink("Geriatria", "Contact", "Home", new { @style = "color:white; font-size:30px; font-weight: 700;  " })</a>
-                            <a class="nav-item nav-link">@Html.ActionLink("Contacto", "Registro", "Home", new { @style = "color:white; font-size:30px; font-weight: 700;  " })</a>
-                            <a class="nav-item nav-link disabled">@Html.ActionLink("Pacientes", "Index", "Pacientes", new { @style = "color:white; font-size:30px; font-weight: 700;  " })</a>
+                            <a class="navbar-brand">@Html.ActionLink("Inicio", "Index", "Home") </a>
+                            <a class="navbar-brand">@Html.ActionLink("Pediatria", "About", "Home") </a>
+                            <a class="nav-item nav-link">@Html.ActionLink("Geriatria", "Contact", "Home")</a>
+                            <a class="nav-item nav-link">@Html.ActionLink("Contacto", "Registro", "Home") </a>
+                            <a class="nav-item nav-link">@Html.ActionLink("Pacientes", "Index", "Pacientes")</a>
+
+
                         </div>
                     </div>
                 </nav>
@@ -86,7 +88,7 @@
             <div class="container-fluid" Style="background: rgb(46,46,46)">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-4 col-md-6 col-lg-4">
+                        <div class="col-xl-4 col-md-6 col-lg-3">
                             <div class="footer_widget">
                                 
                                 <p style="color:white; font-size:25px">
@@ -115,26 +117,27 @@
                                 <h3 style="color:white; font-size:25px">
                                     Unidades de atención
                                 </h3>
-                                <ul style="list-style:none">
-                                    <li><a style="color:white" href="https://www.cics-sto.ipn.mx/">CICS  IPN</a></li>
-                                    <li><a style="color:white" href="http://www.hgm.salud.gob.mx/">Hospital General</a></li>
+                                <br />
+                                <a style="color:white; font-size:18px " href="https://www.cics-sto.ipn.mx/">CICS  IPN</a><br />
+                                <a style="color:white; font-size:18px " href="http://www.hgm.salud.gob.mx/">Hospital General</a>
 
-                                </ul>
+
 
                             </div>
                         </div>
-                        <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="col-xl-2 col-md-6 col-lg-3">
                             <div class="footer_widget">
                                 <h3 style="color:white; font-size:25px">
                                     Links útiles
                                 </h3>
-                                <ul style="list-style:none; ">
-                                    <li><a style="color:white" href="https://es.wikipedia.org/wiki/Optometr%C3%ADa">¿Qué es la optometria?</a></li>
+
+                                <br />
+                                    <a style="color:white; font-size:18px " href="https://es.wikipedia.org/wiki/Optometr%C3%ADa">Optometria</a><br />
                                     
-                                    <li><a style="color:white" href="http://www.imss.gob.mx/">Imss</a></li>
-                                    <li><a style="color:white" href="https://www.gob.mx/issste"> Issste</a></li>
-                                    <li><a style="color:white" href="https://www.ipn.mx/"> IPN</a></li>
-                                </ul>
+                                    <a style="color:white; font-size:18px " href="http://www.imss.gob.mx/">Imss</a><br />
+                                    <a style="color:white; font-size:18px " href="https://www.gob.mx/issste"> Issste</a><br />
+                                    <a style="color:white; font-size:18px " href="https://www.ipn.mx/"> IPN</a>
+                                
                             </div>
                         </div>
                         <div class="col-xl-3 col-md-6 col-lg-3">

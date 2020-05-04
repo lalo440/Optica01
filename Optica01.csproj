@@ -261,6 +261,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="img\aris.jpg" />
     <Content Include="img\banner.png" />
+    <Content Include="img\bb.jfif" />
+    <Content Include="img\bb5.jpg" />
+    <Content Include="img\bbbb.jpg" />
     <Content Include="img\em.png" />
     <Content Include="img\email.png" />
     <Content Include="img\fac.png" />
@@ -269,6 +272,9 @@
     <Content Include="img\icons8-mensaje-relleno-48.png" />
     <Content Include="img\ins.png" />
     <Content Include="img\inst.png" />
+    <Content Include="img\opp.png" />
+    <Content Include="img\oppp.png" />
+    <Content Include="img\opppp.png" />
     <Content Include="img\p.png" />
     <Content Include="img\si.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
