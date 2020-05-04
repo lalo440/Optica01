@@ -263,8 +263,12 @@
     <Content Include="img\banner.png" />
     <Content Include="img\em.png" />
     <Content Include="img\email.png" />
+    <Content Include="img\fac.png" />
+    <Content Include="img\face.png" />
     <Content Include="img\fo.png" />
     <Content Include="img\icons8-mensaje-relleno-48.png" />
+    <Content Include="img\ins.png" />
+    <Content Include="img\inst.png" />
     <Content Include="img\p.png" />
     <Content Include="img\si.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
