@@ -277,6 +277,9 @@
     <Content Include="img\opppp.png" />
     <Content Include="img\p.png" />
     <Content Include="img\si.png" />
+    <Content Include="img\ver.png" />
+    <Content Include="img\verr.png" />
+    <Content Include="img\verrr.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
