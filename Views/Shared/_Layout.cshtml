@@ -17,69 +17,73 @@
 </head>
 <body>
 
-    
+
+  
 
 
 
+    <div class="container-fluid ">
 
-        <div class="container ">
-
-            <div class="row ">
-
-            
-
-                <div class="col-sm-9 col-md-9 ">
-
-
-                    <img src="~/img/aris.jpg" width="100" />
-
-                    
-
-                        <button type="button" class="btn btn-outline-primary btn-lg">@Html.ActionLink("Inicio", "Index", "Home")</button>
-                        <button type="button" class="btn btn-outline-primary btn-lg">@Html.ActionLink("Pediatria", "About", "Home")</button>
-                        <button type="button" class="btn btn-outline-primary btn-lg">@Html.ActionLink("Geriatria", "Contact", "Home")</button>
-                        <button type="button" class="btn btn-outline-primary btn-lg">@Html.ActionLink("Contacto", "Registro", "Home")</button>
-                        <button type="button" class="btn btn-outline-primary btn-lg">@Html.ActionLink("Registro de Pacientes", "Index", "Pacientes")</button>
-
-                      
+        <div class="row ">
 
 
 
-                    </div>
+            <div class="col-sm-9 col-md-9 ">
+                <img src="~/img/aris.jpg" width="100" />
 
 
-
-
-                    <div class="col-sm-3 col-md-3 alert alert-primary" role="alert">
-                        <div class="short_contact_list">
-                            <ul  > 
-                                <li style=" width:10px; list-style-image:url(/img/em.png )  " > <a> lic.dianahdzm@gmail.com    </a></li>
-                                <li style=" width:10px; list-style-image:url(/img/em.png)" ><a>  lic.miriamhdz@hotmail.com    </a></li>
-                                <li style=" list-style-image:url(/img/fo.png)"><a>  movil: 55-11-24-96-33</a></li>
-                                <li style=" list-style-image:url(/img/fo.png)"><a>   movil: 55-25-08-71-36</a></li>
-                            </ul>
-
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                    <a class="navbar-brand" >@Html.ActionLink("Inicio", "Index", "Home", new { @style = "color:white; font-size:30px; font-weight: 700;  " })   </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="navbar-brand">@Html.ActionLink("Pediatria", "About", "Home", new { @style = "color:white; font-size:30px; font-weight: 700;  " }) </a>
+                            <a class="nav-item nav-link">@Html.ActionLink("Geriatria", "Contact", "Home", new { @style = "color:white; font-size:30px; font-weight: 700;  " })</a>
+                            <a class="nav-item nav-link">@Html.ActionLink("Contacto", "Registro", "Home", new { @style = "color:white; font-size:30px; font-weight: 700;  " })</a>
+                            <a class="nav-item nav-link disabled">@Html.ActionLink("Pacientes", "Index", "Pacientes", new { @style = "color:white; font-size:30px; font-weight: 700;  " })</a>
                         </div>
                     </div>
+                </nav>
 
 
+
+            </div>
+
+
+
+
+            <div class="col-sm-3 col-md-3  alert alert-primary" role="alert">
+                <div class="short_contact_list">
+                    <ul>
+                        <li style="  list-style-image:url(/img/em.png )  "> <a> lic.dianahdzm@gmail.com    </a></li>
+                        <li style="  list-style-image:url(/img/em.png)"><a>  lic.miriamhdz@hotmail.com    </a></li>
+                        <li style=" list-style-image:url(/img/fo.png)"><a>  movil: 55-11-24-96-33</a></li>
+                        <li style=" list-style-image:url(/img/fo.png)"><a>   movil: 55-25-08-71-36</a></li>
+                    </ul>
 
                 </div>
+            </div>
+
+
+
         </div>
+    </div>
 
 
-        <div class="container-fluid ">
-            @RenderBody()
-            <hr />
-            <footer>
-                <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
-            </footer>
-        </div>
+    <div class="container-fluid ">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+        </footer>
+    </div>
 
 
 
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
 </body>
 </html>
