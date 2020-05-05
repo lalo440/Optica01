@@ -259,6 +259,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\abue1.jpg" />
     <Content Include="img\aris.jpg" />
     <Content Include="img\banner.png" />
     <Content Include="img\bb.jfif" />
@@ -406,10 +407,10 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Pediatria.cshtml" />
+    <Content Include="Views\Home\Geriatria.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Registro.cshtml" />
+    <Content Include="Views\Home\Contacto.cshtml" />
     <Content Include="Views\Pacientes\Create.cshtml" />
     <Content Include="Views\Pacientes\Delete.cshtml" />
     <Content Include="Views\Pacientes\Details.cshtml" />

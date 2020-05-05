@@ -13,27 +13,30 @@ namespace Optica01.Controllers
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
+        
 
-            return View();
-        }
+       
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-
-        public ActionResult Registro()
-        {
-            
-
-            return View();
-        }
+       
         public ActionResult Ofertas()
+        {
+
+
+            return View();
+        }
+        public ActionResult Pediatria()
+        {
+
+
+            return View();
+        }
+        public ActionResult Geriatria()
+        {
+
+
+            return View();
+        }
+        public ActionResult Contacto()
         {
 
 
