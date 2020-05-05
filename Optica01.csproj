@@ -272,6 +272,16 @@
     <Content Include="img\icons8-mensaje-relleno-48.png" />
     <Content Include="img\ins.png" />
     <Content Include="img\inst.png" />
+    <Content Include="img\lente1.jpg" />
+    <Content Include="img\lente10.jpg" />
+    <Content Include="img\lente2.jpg" />
+    <Content Include="img\lente3.jpg" />
+    <Content Include="img\lente4.jpg" />
+    <Content Include="img\lente5.jpg" />
+    <Content Include="img\lente6.jpg" />
+    <Content Include="img\lente7.jpg" />
+    <Content Include="img\lente8.jpg" />
+    <Content Include="img\lente9.jpg" />
     <Content Include="img\opp.png" />
     <Content Include="img\oppp.png" />
     <Content Include="img\opppp.png" />
@@ -415,6 +425,7 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Home\Ofertas.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

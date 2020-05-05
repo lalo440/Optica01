@@ -22,3 +22,8 @@ select,
 textarea {
     max-width: 280px;
 }
+.caar {
+    border-radius: 10px;
+    background: grey;
+    box-shadow: 0px 2px 9px 2px;
+}

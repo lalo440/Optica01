@@ -33,5 +33,11 @@ namespace Optica01.Controllers
 
             return View();
         }
+        public ActionResult Ofertas()
+        {
+
+
+            return View();
+        }
     }
 }
