@@ -12,12 +12,6 @@ namespace Optica01.Controllers
         {
             return View();
         }
-
-        
-
-       
-
-       
         public ActionResult Ofertas()
         {
 
@@ -37,6 +31,12 @@ namespace Optica01.Controllers
             return View();
         }
         public ActionResult Contacto()
+        {
+
+
+            return View();
+        }
+        public ActionResult Login()
         {
 
 

@@ -1,0 +1,131 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+
+
+@{
+    if (IsPost)
+    {
+        String usuario = Request.Form["usuario"];
+        String contraseña = Request.Form["contraseña"];
+
+
+
+
+        if (usuario == "admin" && contraseña == "admin")
+        {
+             Response.Redirect("~/Pacientes/index");
+        }
+        else
+        {
+    <div class="alert alert-danger" role="alert">
+        Tu contraseña es incorrecta
+    </div>
+
+        }
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+<div style=" background: #2575fc;
+  background: -webkit-linear-gradient(left, #6a11cb, #2575fc);
+  background: -o-linear-gradient(left, #6a11cb, #2575fc);
+  background: -moz-linear-gradient(left, #6a11cb, #2575fc);
+  background: linear-gradient(left, #6a11cb, #2575fc);">
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm" style="text-align:center">
+
+            </div>
+            <div class="col-sm" style="text-align:center">
+
+                <h1 style="color:snow">Acceso al Sistema</h1>
+            </div>
+            <div class="col-sm" style="text-align:center">
+
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm" style="text-align:center">
+
+
+            </div>
+            <div class="animated fadeInDown alert alert-info col-sm" role="alert" style="text-align:center">
+
+                <form class="animated fadeInUp" method="post">
+
+                    <fieldset>
+
+
+
+
+                        <div class="row">
+                            <div class="col-sm" style="margin-top:10px">
+                                <label for="compania">Usuario:</label>
+                            </div>
+                            <div class="col-sm" style="margin-top:10px">
+                                <input type="text" name="usuario" value="" />
+                            </div>
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm" style="margin-top:10px">
+                                <label for="contacto">Contraseña:</label>
+                            </div>
+                            <div class="col-sm" style="margin-top:10px">
+                                <input type="password" name="contraseña" value="" />
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+
+
+                        <div style="margin-top:15px">
+                            <label>&nbsp;</label>
+                            <input class="btn btn-info"  type="submit" name="enviar" value="Enviar" />
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+            <div class="col-sm" style="text-align:center">
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</div>
