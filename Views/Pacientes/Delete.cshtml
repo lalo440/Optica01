@@ -5,93 +5,95 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Delete</h2>
+<h2>Eliminar Registros</h2>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>¿Quieres eliminar el regirtro?</h3>
 <div>
-    <h4>Pacientes</h4>
+    <h4>Paciente</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.nombre)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.nombre)
-        </dd>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm" ">
+                <h4>Nombre</h4>
+            </div>
+            <div class="col-sm">
+                <h4>Telefono</h4>
+            </div>
+            <div class="col-sm">
+                <h4>Sexo</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm" style="margin-bottom:30px "  >
+                @Html.DisplayFor(model => model.nombre)
+            </div>
+            <div class="col-sm" style="margin-bottom:30px ">
+                @Html.DisplayFor(model => model.telefono)
+            </div>
+            <div class="col-sm"style="margin-bottom:30px ">
+                @Html.DisplayFor(model => model.sexo)
+            </div>
+        </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.telefono)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.telefono)
-        </dd>
+        <div class="row">
+            <div class="col-sm">
+                <h4>Edad</h4>
+            </div>
+            <div class="col-sm">
+                <h4>Graduacion</h4>
+            </div>
+            <div class="col-sm">
+                <h4>Sucursal</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm" style="margin-bottom:30px ">
+                @Html.DisplayFor(model => model.edad)
+            </div>
+            <div class="col-sm" style="margin-bottom:30px ">
+                @Html.DisplayFor(model => model.graduacion)
+            </div>
+            <div class="col-sm">
+                @Html.DisplayFor(model => model.sucursal)
+            </div>
+        </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.sexo)
-        </dt>
+        <div class="row">
+            <div class="col-sm">
+                <h4>Dirección</h4>
+            </div>
+            <div class="col-sm">
+                <h4>Observaciones</h4>
+            </div>
+            <div class="col-sm">
+                <h4>Fecha</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm" style="margin-bottom:30px ">
+                @Html.DisplayFor(model => model.direccion)
+            </div>
+            <div class="col-sm" style="margin-bottom:30px ">
+                @Html.DisplayFor(model => model.observaciones)
+            </div>
+            <div class="col-sm" style="margin-bottom:30px ">
+                @Html.DisplayFor(model => model.fecha)
+            </div>
+        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.sexo)
-        </dd>
+    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.edad)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.edad)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.graduacion)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.graduacion)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.sucursal)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.sucursal)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.direccion)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.direccion)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.observaciones)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.observaciones)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.fecha)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.fecha)
-        </dd>
-
-    </dl>
-
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm())
+    {
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
+            <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+            @Html.ActionLink("Regresar a la lista", "Index")
         </div>
     }
 </div>

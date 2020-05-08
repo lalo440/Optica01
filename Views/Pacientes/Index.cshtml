@@ -5,13 +5,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Pacientes registrados</h2>
 
 <p>
     @Html.ActionLink("Crear Nuevo registro", "Create")
 </p>
-<table class="table">
-    <tr>
+<table class="table table-bordered">
+    <tr style="background:rgb(177, 255, 140)">
         <th>
             @Html.DisplayNameFor(model => model.nombre)
         </th>

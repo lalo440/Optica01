@@ -5,87 +5,81 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Details</h2>
+<h2>Detalles del Paciente</h2>
 
-<div>
-    <h4>Pacientes</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.nombre)
-        </dt>
-
-        <dd>
+<div class="container">
+    <div class="row">
+        <div class="col-sm" >
+            <h4>Nombre</h4>
+        </div>
+        <div class="col-sm">
+            <h4>Telefono</h4>
+        </div>
+        <div class="col-sm">
+            <h4>Sexo</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm" style="margin-bottom:30px ">
             @Html.DisplayFor(model => model.nombre)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.telefono)
-        </dt>
-
-        <dd>
+        </div>
+        <div class="col-sm" style="margin-bottom:30px ">
             @Html.DisplayFor(model => model.telefono)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.sexo)
-        </dt>
-
-        <dd>
+        </div>
+        <div class="col-sm" style="margin-bottom:30px ">
             @Html.DisplayFor(model => model.sexo)
-        </dd>
+        </div>
+    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.edad)
-        </dt>
 
-        <dd>
+    <div class="row">
+        <div class="col-sm">
+            <h4>Edad</h4>
+        </div>
+        <div class="col-sm">
+            <h4>Graduacion</h4>
+        </div>
+        <div class="col-sm">
+            <h4>Sucursal</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm" style="margin-bottom:30px ">
             @Html.DisplayFor(model => model.edad)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.graduacion)
-        </dt>
-
-        <dd>
+        </div>
+        <div class="col-sm" style="margin-bottom:30px ">
             @Html.DisplayFor(model => model.graduacion)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.sucursal)
-        </dt>
-
-        <dd>
+        </div>
+        <div class="col-sm">
             @Html.DisplayFor(model => model.sucursal)
-        </dd>
+        </div>
+    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.direccion)
-        </dt>
-
-        <dd>
+    <div class="row">
+        <div class="col-sm">
+            <h4>Dirección</h4>
+        </div>
+        <div class="col-sm">
+            <h4>Observaciones</h4>
+        </div>
+        <div class="col-sm">
+            <h4>Fecha</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm" style="margin-bottom:30px ">
             @Html.DisplayFor(model => model.direccion)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.observaciones)
-        </dt>
-
-        <dd>
+        </div>
+        <div class="col-sm" style="margin-bottom:30px ">
             @Html.DisplayFor(model => model.observaciones)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.fecha)
-        </dt>
-
-        <dd>
+        </div>
+        <div class="col-sm" style="margin-bottom:30px ">
             @Html.DisplayFor(model => model.fecha)
-        </dd>
+        </div>
+    </div>
 
-    </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Volver a la lista", "Index")
 </p>
