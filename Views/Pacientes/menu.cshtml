@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "menu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Menú</h1>
+
+<div>
+
+    
+</div>
+<div class="container" style="margin-bottom:30px">
+    <div class="row">
+        <div class="col-sm">
+          
+        </div>
+        <div class="col-sm">
+            <div class="card animated fadeInDown " style=" animation-delay: 0.3s; width: 18rem; padding-bottom:35px; box-shadow: 5px 5px 9px 2px  ;">
+                <img class="card-img-top" src="~/img/reg.png"  alt="Card image cap">
+                <div class="card-body">
+                    <h3><a>Registra </a></h3>
+                    <p>Guarda los datos de tu paciente para consultarlos en cualquier momento.  <br></p>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <button type="button" class="btn btn-success">   @Html.ActionLink("Registra", "Create", "Pacientes", new { style = "color:white" })   </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card animated fadeInDown " style=" animation-delay: 0.3s; width: 18rem; padding-bottom:35px; box-shadow: 5px 5px 9px 2px  ;">
+                <img class="card-img-top" src="~/img/pac.jpg" width="100" alt="Card image cap">
+                <div class="card-body">
+                    <h3><a>Mira tus pacientes</a></h3>
+                    <p>Consulta, edita o elimina la informacion de pacientes ahora y donde sea.  <br></p>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <button type="button" class="btn btn-info">   @Html.ActionLink("Pacientes", "Index", "Pacientes",  new { style = "color:white" } )   </button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            
+        </div>
+    </div>
+</div>

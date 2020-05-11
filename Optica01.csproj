@@ -287,6 +287,8 @@
     <Content Include="img\oppp.png" />
     <Content Include="img\opppp.png" />
     <Content Include="img\p.png" />
+    <Content Include="img\pac.jpg" />
+    <Content Include="img\reg.png" />
     <Content Include="img\si.png" />
     <Content Include="img\ver.png" />
     <Content Include="img\verr.png" />
@@ -428,6 +430,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Home\Ofertas.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Pacientes\menu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

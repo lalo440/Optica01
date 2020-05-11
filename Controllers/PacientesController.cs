@@ -15,6 +15,10 @@ namespace Optica01.Controllers
     {
         private DBContext db = new DBContext();
 
+        public ActionResult menu()
+        {
+            return View();
+        }
         // GET: Pacientes
         public ActionResult Index()
         {
