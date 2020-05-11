@@ -39,6 +39,7 @@ namespace Optica01.Controllers
         // GET: Pacientes/Create
         public ActionResult Create()
         {
+            ViewBag.sucursal = new SelectList(db.Pacientes,"id", "sucursales");
             return View();
         }
 
@@ -55,7 +56,7 @@ namespace Optica01.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-
+            ViewBag.sucursal = new SelectList(db.Pacientes, "id", "sucursales", pacientes.sucursal) ;
             return View(pacientes);
         }
 
@@ -67,10 +68,12 @@ namespace Optica01.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Pacientes pacientes = db.Pacientes.Find(id);
+
             if (pacientes == null)
             {
                 return HttpNotFound();
             }
+            ViewBag.sucursal = new SelectList(db.Pacientes,"id", "sucursales",pacientes.sucursal);
             return View(pacientes);
         }
 
@@ -87,6 +90,7 @@ namespace Optica01.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.sucursal = new SelectList(db.Pacientes,"id", "sucursales", pacientes.sucursal);
             return View(pacientes);
         }
 
