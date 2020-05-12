@@ -7,7 +7,7 @@
 
 <h2>Detalles del Paciente</h2>
 
-<div class="container">
+<div class="container alert alert-primary" style="margin-bottom:20px; ">
     <div class="row">
         <div class="col-sm" >
             <h4>Nombre</h4>
@@ -80,6 +80,7 @@
 
 </div>
 <p>
-    @Html.ActionLink("Editar", "Edit", new { id = Model.id }) |
+    <button type="button" class="btn btn-success">   @Html.ActionLink("Editar", "Edit", new { id = Model.id  } , new { style="color:white"})      </button>
+   
     @Html.ActionLink("Volver a la lista", "Index")
 </p>
